@@ -1,0 +1,17 @@
+.parent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 110px 110px 110px;
+    grid-gap: 15px;
+}
+
+.child{
+    border: 1px solid #000000;
+    padding-left: 15px;
+}
+
+.child1 {
+    border: red 10px solid;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}

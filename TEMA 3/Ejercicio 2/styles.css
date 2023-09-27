@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10vh 85vh 5vh;
+}
+
+.cabecera{
+    grid-column: 1 / span 4;
+    grid-row: 1/1;
+    background-color: #ffd700;
+}
+
+.sidebar{
+    background-color: #6496ec;
+    grid-column: span 1;
+}
+
+.contenido{
+    background-color: #ff8c00;
+    grid-column: span 3;
+}
+
+.pie{
+    background-color: #2bcc2f;
+    grid-column: span 4;
+}

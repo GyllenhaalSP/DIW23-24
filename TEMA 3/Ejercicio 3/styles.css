@@ -1,0 +1,14 @@
+.parent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 50px;
+    grid-gap: 8px;
+    align-content: center;
+    border: solid 2px black;
+    height: 300px;
+}
+
+.child{
+    background-color: yellow;
+    text-align: center;
+}
