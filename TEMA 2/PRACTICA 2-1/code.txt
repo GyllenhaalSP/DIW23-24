@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>PRÁCTICA 2-1 - EJERCICIO 1 - DANIEL ALONSO LÁZARO</title>
+    <style>
+        nav{
+            background-color: #00049d;
+            color: white;
+            padding: 50px;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 36px;
+            font-family: Arial, sans-serif;
+        }
+
+        p{
+            font-style: italic;
+            text-align: center;
+        }
+
+        table{
+            font-family: monospace,serif;
+            width: 100%;
+        }
+
+
+    </style>
+    <script></script>
+</head>
+<body>
+<nav>
+    <h1><u>Desarrollo de Aplicaciones Web</u></h1>
+</nav>
+<article>
+    <p>Módulos por curso para el Ciclo Formativo de Grado Superior: Desarrollo de Aplicaciones Web</p>
+    <table>
+        <tr>
+            <td style="text-align: center;">1º CURSO</td>
+            <td>2º CURSO</td>
+        </tr>
+        <tr>
+            <td>Sistemas informáticos</td>
+            <td>5h/semana</td>
+            <td>Desarrollo web entorno cliente</td>
+            <td>6h/semana</td>
+        </tr>
+        <tr>
+            <td>Bases de datos</td>
+            <td>5h/semana</td>
+            <td>Desarrollo web entorno servidor</td>
+            <td>8h/semana</td>
+        </tr>
+        <tr>
+            <td>Programación</td>
+            <td>7h/semana</td>
+            <td>Despliegue de aplicaciones web</td>
+            <td>5h/semana</td>
+        </tr>
+        <tr>
+            <td>Lenguaje de Marcas y sistemas de gestión de la <br>información</td>
+            <td>4h/semana</td>
+            <td>Diseño de interfaces web</td>
+            <td>6h/semana</td>
+        </tr>
+        <tr>
+            <td>Entornos de desarrollo</td>
+            <td>3h/semana</td>
+            <td>Empresa e iniciativa <br>emprendedora</td>
+            <td>3h/semana</td>
+        </tr>
+    </table>
+</article>
+
+<footer>
+    <br>Daniel Alonso Lázaro
+</footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>PRÁCTICA 2-1 - EJERCICIO 2 - DANIEL ALONSO LÁZARO</title>
+    <style>
+        #circulo{
+            height: 500px;
+            width: 500px;
+            border: 15px solid #2e8b57;
+            background-color: springgreen;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 500px;
+        }
+
+        span{
+            font-size: 30px;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+    <script></script>
+</head>
+<body>
+    <div id="circulo">
+        <span><b>Diseño de Interfaces Web</b></span>
+    </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>PRÁCTICA 2-1 - EJERCICIO 3 - DANIEL ALONSO LÁZARO</title>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/calculator');
+
+        h3{
+            text-align: center;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        table{
+            border: 3px solid black;
+            background-color: #ff3434;
+            border-radius: 30px;
+            margin-left: 2em;
+            margin-top: 2em;
+            padding-left: 1.5em;
+            padding-right: 1.5em;
+            padding-bottom: 1em;
+            position: absolute;
+            top: 0;
+            left: 35%;
+            text-align: center;
+        }
+
+        input[type="button"]{
+            border-radius:20px;
+            width: 73px;
+            height: 73px;
+            margin: 2px;
+            background-color: whitesmoke;
+            font-size: 20px;
+        }
+
+        input[type="button"]:hover{
+            background-color: wheat;
+        }
+        input[value="C"]{
+            background-color: #ff34c4;
+        }
+
+        input[type='text'] {
+            font-size: 46px;
+            line-height: 24px;
+            padding: 5px 5px;
+            border-radius: 10px;
+            text-align: right;
+            font-family: 'calculator', sans-serif;
+            font-weight: bolder;
+            margin-bottom: 5px;
+            display: block;
+            border: 3px solid black;
+            width: 300px;
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+<article>
+    <main>
+        <section>
+            <table>
+                <tr>
+                    <td>
+                        <h3><b>CALCULADORA</b></h3>
+                        <form name="calculadora">
+                            <label for="pantalla"></label>
+                            <input type="text" value="" name="pantalla" id="pantalla" readonly>
+                            <br>
+                            <input type="button" value="7" id="7">
+                            <input type="button" value="8" id="8">
+                            <input type="button" value="9" id="9">
+                            <input type="button" value="+" id="+">
+                            <br>
+                            <input type="button" value="4" id="4">
+                            <input type="button" value="5" id="5">
+                            <input type="button" value="6" id="6">
+                            <input type="button" value="-" id="-">
+                            <br>
+                            <input type="button" value="1" id="1">
+                            <input type="button" value="2" id="2">
+                            <input type="button" value="3" id="3">
+                            <input type="button" value="*" id="*">
+                            <br>
+                            <input type="button" value="C" id="C">
+                            <input type="button" value="0" id="0">
+                            <input type="button" value="/" id="/">
+                            <input type="button" value="=" id="=">
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </main>
+</article>
+</body>
+</html>
