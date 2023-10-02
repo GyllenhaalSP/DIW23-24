@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="PRÁCTICA 3-1 PÁGINA WEB RESPONSIVE">
+    <meta name="author" content="Daniel Alonso Lázaro">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Página Web Responsive con Grid</title>
+    <script src="main.js"></script>
+</head>
+<body>
+<header>
+    <div>
+        <img id="cabecera" src="breaking-news.svg" alt="Breaking news!">
+    </div>
+</header>
+<nav>
+    <div>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li>|</li>
+            <li><a href="#">Noticias</a></li>
+            <li>|</li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </div>
+</nav>
+<article class="noticiasPrincipales">
+    <h1>Noticias Principales</h1>
+    <img id="news" src="news.jpg" alt="News">
+    <section>
+        <h2>Noticia 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nunc eget ultricies ultricies, nunc
+            elit
+            ultricies nunc, nec ultricies nisl nunc eget nunc. Donec auctor, nunc eget ultricies ultricies, nunc elit
+            ultricies nunc, nec ultricies nisl nunc eget nunc.</p>
+    </section>
+    <section>
+        <h2>Noticia 2</h2>
+        <p>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab beatae, blanditiis deleniti dolor ea earum ex facilis, fugiat id laborum placeat praesentium quidem quis reiciendis saepe ullam veniam veritatis?</span>
+            <span>A adipisci alias aperiam at atque delectus doloribus dolorum excepturi exercitationem fuga fugiat in ipsa magni, maiores maxime molestias nemo nesciunt quaerat quasi quibusdam ratione recusandae saepe sunt unde vitae!</span>
+            <span>Accusamus atque, cum dignissimos eum explicabo harum magnam natus saepe veniam voluptates. Ad aliquid atque distinctio error excepturi facilis impedit, nobis pariatur repellendus saepe sunt suscipit vel, voluptate, voluptatem voluptatum?</span>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab beatae, blanditiis deleniti dolor ea earum ex facilis, fugiat id laborum placeat praesentium quidem quis reiciendis saepe ullam veniam veritatis?</span>
+            <span>A adipisci alias aperiam at atque delectus doloribus dolorum excepturi exercitationem fuga fugiat in ipsa magni, maiores maxime molestias nemo nesciunt quaerat quasi quibusdam ratione recusandae saepe sunt unde vitae!</span>
+            <span>Accusamus atque, cum dignissimos eum explicabo harum magnam natus saepe veniam voluptates. Ad aliquid atque distinctio error excepturi facilis impedit, nobis pariatur repellendus saepe sunt suscipit vel, voluptate, voluptatem voluptatum?</span>
+        </p>
+    </section>
+</article>
+<article class="noticiasDestacadas">
+    <h1>Noticias Destacadas</h1>
+    <section>
+        <h2>Noticia 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nunc eget ultricies ultricies, nunc
+            elit
+            ultricies nunc, nec ultricies nisl nunc eget nunc. Donec auctor, nunc eget ultricies ultricies, nunc elit
+            ultricies nunc, nec ultricies nisl nunc eget nunc.</p>
+    </section>
+    <section>
+        <h2>Noticia 2</h2>
+        <p>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab beatae, blanditiis deleniti dolor ea earum ex facilis, fugiat id laborum placeat praesentium quidem quis reiciendis saepe ullam veniam veritatis?</span>
+            <span>A adipisci alias aperiam at atque delectus doloribus dolorum excepturi exercitationem fuga fugiat in ipsa magni, maiores maxime molestias nemo nesciunt quaerat quasi quibusdam ratione recusandae saepe sunt unde vitae!</span>
+            <span>Accusamus atque, cum dignissimos eum explicabo harum magnam natus saepe veniam voluptates. Ad aliquid atque distinctio error excepturi facilis impedit, nobis pariatur repellendus saepe sunt suscipit vel, voluptate, voluptatem voluptatum?</span>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab beatae, blanditiis deleniti dolor ea earum ex facilis, fugiat id laborum placeat praesentium quidem quis reiciendis saepe ullam veniam veritatis?</span>
+            <span>A adipisci alias aperiam at atque delectus doloribus dolorum excepturi exercitationem fuga fugiat in ipsa magni, maiores maxime molestias nemo nesciunt quaerat quasi quibusdam ratione recusandae saepe sunt unde vitae!</span>
+            <span>Accusamus atque, cum dignissimos eum explicabo harum magnam natus saepe veniam voluptates. Ad aliquid atque distinctio error excepturi facilis impedit, nobis pariatur repellendus saepe sunt suscipit vel, voluptate, voluptatem voluptatum?</span>
+        </p>
+    </section></article>
+<footer>
+    <div>
+        <span>© 2023 Daniel Alonso Lázaro</span>
+    </div>
+</footer>
+</body>
+</html>
+
+body{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10vh 5vh 1fr 1fr 5vh;
+    height: 100vh;
+    margin: auto;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+h1{
+    color: black;
+}
+
+nav{
+    grid-column: 1/6;
+    grid-row: 2/3;
+    background-color: #3497d7;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: inline-flex;
+    padding: 0;
+    margin: 7px;
+}
+
+nav ul li {
+    margin: 0 0 0 30px;
+    padding: 0;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+header{
+    grid-column: 1/6;
+    grid-row: 1/2;
+    background-color: white;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px;
+}
+
+header div{
+    margin: 0;
+}
+
+#cabecera {
+    margin: auto;
+    height: 50px;
+    display: block;
+}
+
+footer{
+    grid-column: 1/6;
+    grid-row: 5/6;
+    background-color: #3497d7;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+}
+
+.noticiasPrincipales{
+    grid-column: 1/3;
+    grid-row: 3/4;
+    color: #000000;
+    font-size: 16px;
+    padding: 10px;
+    min-width: fit-content;
+    min-height: 290px;
+    overflow: scroll;
+    overflow-x: hidden;
+    text-align: justify;
+}
+
+.noticiasPrincipales::-webkit-scrollbar{
+    display: none;
+}
+
+#news{
+    width: 300px;
+    height: auto;
+}
+
+.noticiasDestacadas{
+    grid-column: 4/5;
+    grid-row: 4/5;
+    color: #000000;
+    padding: 10px;
+    min-height: fit-content;
+    min-width: fit-content;
+    overflow: scroll;
+    overflow-x: hidden;
+    text-align: justify;
+}
+
+.noticiasDestacadas::-webkit-scrollbar{
+    display: none;
+}
