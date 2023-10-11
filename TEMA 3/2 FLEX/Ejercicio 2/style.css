@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+}
+
+.noWrap{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.reverseWrap{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+
+.elemento{
+    background-color: skyblue;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
