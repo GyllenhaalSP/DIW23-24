@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
+    <meta content="GRÁFICO DE BARRAS" name="description">
+    <meta content="Daniel Alonso Lázaro" name="author">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="style.css" rel="stylesheet">
+    <title>GRÁFICO DE BARRAS</title>
+</head>
+<body>
+<main>
+    <header>
+        <nav>
+            <h1>PANEL DE CONTROL</h1>
+        </nav>
+    </header>
+    <section>
+        <div class="menu">
+            <ul>
+                <li class="menuHeader menuElement"><h2>Menú</h2></li>
+                <li class="menuElement">Elemento 1</li>
+                <li class="menuElement">Elemento 2</li>
+                <li class="menuElement">Elemento 3</li>
+                <li class="menuElement">Elemento 4</li>
+                <li class="menuElement">Elemento 5</li>
+            </ul>
+        </div>
+        <div class="chart">
+            <div class="title">
+                <h2>Gráfico de Barras</h2>
+            </div>
+            <div class="bars">
+                <div class="bar bar1" style="height: 80%"></div>
+                <div class="bar bar2" style="height: 60%"></div>
+                <div class="bar bar3" style="height: 40%"></div>
+                <div class="bar bar4" style="height: 70%"></div>
+                <div class="bar bar5" style="height: 90%"></div>
+            </div>
+        </div>
+        <div class="formulario">
+            <div>
+                <h2>Formulario</h2>
+            </div>
+            <div class="contenido1">
+                <label for="campo1">Campo 1:
+                </label><br>
+                <input id="campo1" type="text">
+            </div>
+            <div class="contenido2">
+                <label for="campo2">Campo 2:
+                </label><br>
+                <input id="campo2" type="text">
+            </div>
+            <div class="contenido3">
+                <input id="button" type="button" value="Enviar">
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>
+
+body, html {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    height: 10vh;
+    background-color: #3497d7;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.menu{
+    border: 1px solid #c8c8c8;
+    flex: 1 1 auto;
+    margin: 10px;
+}
+
+.menuHeader h2{
+    margin: 40px 0 20px 0;
+}
+
+.menuElement{
+    margin: 0 0 10px 20px;
+}
+
+.chart {
+    flex: 1 1 auto;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #c8c8c8;
+    margin: 10px;
+}
+
+.formulario{
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid #c8c8c8;
+    margin: 10px;
+    padding: 20px;
+}
+
+.contenido1, .contenido2, .contenido3, .formulario > div{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.title h2{
+    margin: 40px 0 0 20px;
+}
+
+
+.bars{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.bar {
+    width: 50px;
+    margin: 0 10px;
+}
+
+.bar1 {
+    background-color: #3498db;
+}
+
+.bar2 {
+    background-color: #e74c3c;
+}
+
+.bar3 {
+    background-color: #2ecc71;
+}
+
+.bar4 {
+    background-color: #f39c12;
+}
+
+.bar5 {
+    background-color: #9b59b6;
+}
