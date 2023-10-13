@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="PRÁCTICA 3.2 FLEXBOX - GALERÍA DE IMÁGENES">
+    <meta name="author" content="Daniel Alonso Lázaro">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Galería de imágenes</title>
+    <script defer src="main.js"></script>
+</head>
+<body>
+<main>
+    <header>
+        <nav>
+            <ul class="left">
+                <li>
+                    <a href="galeria.html">GALERÍA</a>
+                </li>
+            </ul>
+            <ul class="right">
+                <li>
+                    <a href="#" id="voltear" onclick="voltear()">VOLTEAR</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="flex-wrap">
+            <div class="imagen"><img src="resources/001.png" alt="Imagen 001.png"></div>
+            <div class="imagen"><img src="resources/002.png" alt="Imagen 002.png"></div>
+            <div class="imagen"><img src="resources/003.png" alt="Imagen 003.png"></div>
+            <div class="imagen"><img src="resources/004.png" alt="Imagen 004.png"></div>
+            <div class="imagen"><img src="resources/005.png" alt="Imagen 005.png"></div>
+            <div class="imagen"><img src="resources/006.png" alt="Imagen 006.png"></div>
+            <div class="imagen"><img src="resources/007.png" alt="Imagen 007.png"></div>
+            <div class="imagen"><img src="resources/008.png" alt="Imagen 008.png"></div>
+            <div class="imagen"><img src="resources/009.png" alt="Imagen 009.png"></div>
+            <div class="imagen"><img src="resources/010.png" alt="Imagen 010.png"></div>
+            <div class="imagen"><img src="resources/011.png" alt="Imagen 011.png"></div>
+            <div class="imagen"><img src="resources/012.png" alt="Imagen 012.png"></div>
+            <div class="imagen"><img src="resources/013.png" alt="Imagen 013.png"></div>
+            <div class="imagen"><img src="resources/014.png" alt="Imagen 014.png"></div>
+            <div class="imagen"><img src="resources/015.png" alt="Imagen 015.png"></div>
+            <div class="imagen"><img src="resources/016.png" alt="Imagen 016.png"></div>
+            <div class="imagen"><img src="resources/017.png" alt="Imagen 017.png"></div>
+            <div class="imagen"><img src="resources/018.png" alt="Imagen 018.png"></div>
+            <div class="imagen"><img src="resources/019.png" alt="Imagen 019.png"></div>
+            <div class="imagen"><img src="resources/020.png" alt="Imagen 020.png"></div>
+            <div class="imagen"><img src="resources/021.png" alt="Imagen 021.png"></div>
+            <div class="imagen"><img src="resources/022.png" alt="Imagen 022.png"></div>
+            <div class="imagen"><img src="resources/023.png" alt="Imagen 023.png"></div>
+            <div class="imagen"><img src="resources/024.png" alt="Imagen 024.png"></div>
+            <div class="imagen"><img src="resources/025.png" alt="Imagen 025.png"></div>
+            <div class="imagen"><img src="resources/026.png" alt="Imagen 026.png"></div>
+            <div class="imagen"><img src="resources/027.png" alt="Imagen 027.png"></div>
+            <div class="imagen"><img src="resources/028.png" alt="Imagen 028.png"></div>
+            <div class="imagen"><img src="resources/029.png" alt="Imagen 029.png"></div>
+            <div class="imagen"><img src="resources/030.png" alt="Imagen 030.png"></div>
+            <div class="imagen"><img src="resources/031.png" alt="Imagen 031.png"></div>
+            <div class="imagen"><img src="resources/032.png" alt="Imagen 032.png"></div>
+            <div class="imagen"><img src="resources/033.png" alt="Imagen 033.png"></div>
+            <div class="imagen"><img src="resources/034.png" alt="Imagen 034.png"></div>
+            <div class="imagen"><img src="resources/035.png" alt="Imagen 035.png"></div>
+            <div class="imagen"><img src="resources/036.png" alt="Imagen 036.png"></div>
+            <div class="imagen"><img src="resources/037.png" alt="Imagen 037.png"></div>
+            <div class="imagen"><img src="resources/038.png" alt="Imagen 038.png"></div>
+            <div class="imagen"><img src="resources/039.png" alt="Imagen 039.png"></div>
+            <div class="imagen"><img src="resources/040.png" alt="Imagen 040.png"></div>
+            <div class="imagen"><img src="resources/041.png" alt="Imagen 041.png"></div>
+            <div class="imagen"><img src="resources/042.png" alt="Imagen 042.png"></div>
+            <div class="imagen"><img src="resources/043.png" alt="Imagen 043.png"></div>
+            <div class="imagen"><img src="resources/044.png" alt="Imagen 044.png"></div>
+            <div class="imagen"><img src="resources/045.png" alt="Imagen 045.png"></div>
+            <div class="imagen"><img src="resources/046.png" alt="Imagen 046.png"></div>
+            <div class="imagen"><img src="resources/047.png" alt="Imagen 047.png"></div>
+            <div class="imagen"><img src="resources/048.png" alt="Imagen 048.png"></div>
+            <div class="imagen"><img src="resources/049.png" alt="Imagen 049.png"></div>
+            <div class="imagen"><img src="resources/050.png" alt="Imagen 050.png"></div>
+            <div class="imagen"><img src="resources/051.png" alt="Imagen 051.png"></div>
+            <div class="imagen"><img src="resources/052.png" alt="Imagen 052.png"></div>
+            <div class="imagen"><img src="resources/053.png" alt="Imagen 053.png"></div>
+            <div class="imagen"><img src="resources/054.png" alt="Imagen 054.png"></div>
+            <div class="imagen"><img src="resources/055.png" alt="Imagen 055.png"></div>
+            <div class="imagen"><img src="resources/056.png" alt="Imagen 056.png"></div>
+            <div class="imagen"><img src="resources/057.png" alt="Imagen 057.png"></div>
+            <div class="imagen"><img src="resources/058.png" alt="Imagen 058.png"></div>
+            <div class="imagen"><img src="resources/059.png" alt="Imagen 059.png"></div>
+            <div class="imagen"><img src="resources/060.png" alt="Imagen 060.png"></div>
+            <div class="imagen"><img src="resources/061.png" alt="Imagen 061.png"></div>
+            <div class="imagen"><img src="resources/062.png" alt="Imagen 062.png"></div>
+            <div class="imagen"><img src="resources/063.png" alt="Imagen 063.png"></div>
+            <div class="imagen"><img src="resources/064.png" alt="Imagen 064.png"></div>
+            <div class="imagen"><img src="resources/065.png" alt="Imagen 065.png"></div>
+            <div class="imagen"><img src="resources/066.png" alt="Imagen 066.png"></div>
+            <div class="imagen"><img src="resources/067.png" alt="Imagen 067.png"></div>
+            <div class="imagen"><img src="resources/068.png" alt="Imagen 068.png"></div>
+            <div class="imagen"><img src="resources/069.png" alt="Imagen 069.png"></div>
+            <div class="imagen"><img src="resources/070.png" alt="Imagen 070.png"></div>
+            <div class="imagen"><img src="resources/071.png" alt="Imagen 071.png"></div>
+            <div class="imagen"><img src="resources/072.png" alt="Imagen 072.png"></div>
+            <div class="imagen"><img src="resources/073.png" alt="Imagen 073.png"></div>
+            <div class="imagen"><img src="resources/074.png" alt="Imagen 074.png"></div>
+            <div class="imagen"><img src="resources/075.png" alt="Imagen 075.png"></div>
+            <div class="imagen"><img src="resources/076.png" alt="Imagen 076.png"></div>
+            <div class="imagen"><img src="resources/077.png" alt="Imagen 077.png"></div>
+            <div class="imagen"><img src="resources/078.png" alt="Imagen 078.png"></div>
+            <div class="imagen"><img src="resources/079.png" alt="Imagen 079.png"></div>
+            <div class="imagen"><img src="resources/080.png" alt="Imagen 080.png"></div>
+            <div class="imagen"><img src="resources/081.png" alt="Imagen 081.png"></div>
+            <div class="imagen"><img src="resources/082.png" alt="Imagen 082.png"></div>
+            <div class="imagen"><img src="resources/083.png" alt="Imagen 083.png"></div>
+            <div class="imagen"><img src="resources/084.png" alt="Imagen 084.png"></div>
+            <div class="imagen"><img src="resources/085.png" alt="Imagen 085.png"></div>
+            <div class="imagen"><img src="resources/086.png" alt="Imagen 086.png"></div>
+            <div class="imagen"><img src="resources/087.png" alt="Imagen 087.png"></div>
+            <div class="imagen"><img src="resources/088.png" alt="Imagen 088.png"></div>
+            <div class="imagen"><img src="resources/089.png" alt="Imagen 089.png"></div>
+            <div class="imagen"><img src="resources/090.png" alt="Imagen 090.png"></div>
+            <div class="imagen"><img src="resources/091.png" alt="Imagen 091.png"></div>
+            <div class="imagen"><img src="resources/092.png" alt="Imagen 092.png"></div>
+            <div class="imagen"><img src="resources/093.png" alt="Imagen 093.png"></div>
+            <div class="imagen"><img src="resources/094.png" alt="Imagen 094.png"></div>
+            <div class="imagen"><img src="resources/095.png" alt="Imagen 095.png"></div>
+            <div class="imagen"><img src="resources/096.png" alt="Imagen 096.png"></div>
+            <div class="imagen"><img src="resources/097.png" alt="Imagen 097.png"></div>
+            <div class="imagen"><img src="resources/098.png" alt="Imagen 098.png"></div>
+            <div class="imagen"><img src="resources/099.png" alt="Imagen 099.png"></div>
+            <div class="imagen"><img src="resources/100.png" alt="Imagen 100.png"></div>
+            <div class="imagen"><img src="resources/101.png" alt="Imagen 101.png"></div>
+            <div class="imagen"><img src="resources/102.png" alt="Imagen 102.png"></div>
+            <div class="imagen"><img src="resources/103.png" alt="Imagen 103.png"></div>
+            <div class="imagen"><img src="resources/104.png" alt="Imagen 104.png"></div>
+            <div class="imagen"><img src="resources/105.png" alt="Imagen 105.png"></div>
+            <div class="imagen"><img src="resources/106.png" alt="Imagen 106.png"></div>
+            <div class="imagen"><img src="resources/107.png" alt="Imagen 107.png"></div>
+            <div class="imagen"><img src="resources/108.png" alt="Imagen 108.png"></div>
+            <div class="imagen"><img src="resources/109.png" alt="Imagen 109.png"></div>
+            <div class="imagen"><img src="resources/110.png" alt="Imagen 110.png"></div>
+            <div class="imagen"><img src="resources/111.png" alt="Imagen 111.png"></div>
+            <div class="imagen"><img src="resources/112.png" alt="Imagen 112.png"></div>
+            <div class="imagen"><img src="resources/113.png" alt="Imagen 113.png"></div>
+            <div class="imagen"><img src="resources/114.png" alt="Imagen 114.png"></div>
+            <div class="imagen"><img src="resources/115.png" alt="Imagen 115.png"></div>
+            <div class="imagen"><img src="resources/116.png" alt="Imagen 116.png"></div>
+            <div class="imagen"><img src="resources/117.png" alt="Imagen 117.png"></div>
+            <div class="imagen"><img src="resources/118.png" alt="Imagen 118.png"></div>
+            <div class="imagen"><img src="resources/119.png" alt="Imagen 119.png"></div>
+            <div class="imagen"><img src="resources/120.png" alt="Imagen 120.png"></div>
+            <div class="imagen"><img src="resources/121.png" alt="Imagen 121.png"></div>
+            <div class="imagen"><img src="resources/122.png" alt="Imagen 122.png"></div>
+            <div class="imagen"><img src="resources/123.png" alt="Imagen 123.png"></div>
+            <div class="imagen"><img src="resources/124.png" alt="Imagen 124.png"></div>
+            <div class="imagen"><img src="resources/125.png" alt="Imagen 125.png"></div>
+            <div class="imagen"><img src="resources/126.png" alt="Imagen 126.png"></div>
+            <div class="imagen"><img src="resources/127.png" alt="Imagen 127.png"></div>
+            <div class="imagen"><img src="resources/128.png" alt="Imagen 128.png"></div>
+            <div class="imagen"><img src="resources/129.png" alt="Imagen 129.png"></div>
+            <div class="imagen"><img src="resources/130.png" alt="Imagen 130.png"></div>
+            <div class="imagen"><img src="resources/131.png" alt="Imagen 131.png"></div>
+            <div class="imagen"><img src="resources/132.png" alt="Imagen 132.png"></div>
+            <div class="imagen"><img src="resources/133.png" alt="Imagen 133.png"></div>
+            <div class="imagen"><img src="resources/134.png" alt="Imagen 134.png"></div>
+            <div class="imagen"><img src="resources/135.png" alt="Imagen 135.png"></div>
+            <div class="imagen"><img src="resources/136.png" alt="Imagen 136.png"></div>
+            <div class="imagen"><img src="resources/137.png" alt="Imagen 137.png"></div>
+            <div class="imagen"><img src="resources/138.png" alt="Imagen 138.png"></div>
+            <div class="imagen"><img src="resources/139.png" alt="Imagen 139.png"></div>
+            <div class="imagen"><img src="resources/140.png" alt="Imagen 140.png"></div>
+            <div class="imagen"><img src="resources/141.png" alt="Imagen 141.png"></div>
+            <div class="imagen"><img src="resources/142.png" alt="Imagen 142.png"></div>
+            <div class="imagen"><img src="resources/143.png" alt="Imagen 143.png"></div>
+            <div class="imagen"><img src="resources/144.png" alt="Imagen 144.png"></div>
+            <div class="imagen"><img src="resources/145.png" alt="Imagen 145.png"></div>
+            <div class="imagen"><img src="resources/146.png" alt="Imagen 146.png"></div>
+            <div class="imagen"><img src="resources/147.png" alt="Imagen 147.png"></div>
+            <div class="imagen"><img src="resources/148.png" alt="Imagen 148.png"></div>
+            <div class="imagen"><img src="resources/149.png" alt="Imagen 149.png"></div>
+            <div class="imagen"><img src="resources/150.png" alt="Imagen 150.png"></div>
+            <div class="imagen"><img src="resources/151.png" alt="Imagen 151.png"></div>
+        </div>
+    </section>
+    <footer>
+        <p>DIW 2023 - DANIEL ALONSO LÁZARO &copy;</p>
+    </footer>
+</main>
+</body>
+</html>
