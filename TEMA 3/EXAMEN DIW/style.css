@@ -1,0 +1,121 @@
+@import "resets.css";
+
+main{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 26vh 26vh 26vh 11vh;
+    background-color: #ddd;
+}
+
+header{
+    grid-row: 1/2;
+    background-color: #000;
+}
+
+.seccion1 {
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+
+.seccion2{
+    grid-column: 2/4;
+    grid-row: 2/3;
+
+}
+
+.seccion3{
+    grid-column: 2/4;
+    grid-row: 3/3
+}
+
+aside{
+    grid-column: 1/2;
+    grid-row: 1/4;
+    background-color: #ccc;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    padding: 8px;
+}
+
+.aside1{
+    grid-column: 1;
+    grid-row: 1/4;
+}
+
+.aside2{
+    grid-column: 1;
+    grid-row: 2/4;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: wrap column;
+    align-items: flex-end;
+}
+
+.aside3{
+    grid-column: 1;
+    grid-row: 3/4;
+}
+
+footer{
+    grid-column: 1/4;
+    grid-row: 4;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    padding: 10px;
+
+
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul li{
+    margin-right: 25px;
+    flex: 0 0 auto;
+}
+
+.derecha{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    margin-right: auto;
+}
+
+.izquierda{
+    display: flex;
+    align-items: center;
+}
+
+ul > li{
+    padding: 10px;
+    border-radius: 70px;
+    border: 3px solid #ccc;
+    background-color: #000;
+}
+
+ul > li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+ul li > a:hover{
+    padding: 15px;
+    border-radius: 70px;
+    background-color: #ccc;
+    color: #000;
+}
+
+#logo{
+    width: 40px;
+    border-radius: 40px;
+}

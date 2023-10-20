@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="Página de registro">
+    <meta name="author" content="Daniel Alonso Lázaro">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registro-style.css">
+    <title>¡REGÍSTRATE!</title>
+    <script defer crossorigin="anonymous" src="https://kit.fontawesome.com/9e6ce9bbf3.js"></script>
+</head>
+<body>
+<section>
+    <div id="registro">
+        <form id ="form" action="#" method="post">
+            <div class="input-container">
+                <label for="nombre_usuario"></label>
+                <input autofocus id="nombre_usuario" name="nombre_usuario" placeholder="Nombre" required
+                       type="text">
+                <label for="apellidos"></label>
+                <input id="apellidos" name="apellidos" placeholder="Apellidos" required type="text">
+            </div>
+            <label for="mail"></label>
+            <input id="mail" name="mail" pattern="[a-z0-9._\%\+\-]+@educa\.madrid\.org$"
+                   placeholder="Correo institucional" required
+                   type="email">
+            <label for="pwd"></label>
+            <input class="pwd_input" id="pwd" name="pwd" placeholder="Contraseña"
+                   required type="password">
+            <i class="fa-solid fa-eye show_pwd"></i>
+            <label for="pwd2"></label>
+            <input class="pwd_input2" id="pwd2" name="pwd2" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                   placeholder="Repetir contraseña"
+                   required type="password">
+            <i class="fa-solid fa-eye show_pwd2"></i>
+            <div>
+                <p class="recordar">¿Ya tienes una cuenta?&nbsp;<a href="login.html">Login</a></p>
+            </div>
+            <input type="submit" value="Registrarse">
+        </form>
+    </div>
+</body>
+</html>
