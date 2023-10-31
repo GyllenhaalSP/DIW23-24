@@ -1,0 +1,71 @@
+html{
+    caret-color: transparent;
+}
+
+body,
+ul.dropdown-menu,
+ul .dropdown-item,
+div.container.flex-grow-1{
+    background-color: #ccc;
+}
+
+div.container.flex-grow-1{
+    padding-top: 1rem;
+}
+
+#accordionFlush,
+#cv,
+#contacto{
+    padding-top: 2rem;
+}
+
+.accordion-button,
+.card{
+    background-color: #f8f9fa;
+}
+
+.card-text{
+    text-align: justify;
+}
+
+table{
+    table-layout: fixed;
+    width: 100%;
+}
+
+h1,
+h5 {
+    color: #198754;
+    display: inline-block;
+    font-weight: bolder;
+    margin: 0;
+    padding: 0;
+}
+
+.perfil{
+    width: 30vw !important;
+    height: auto;
+    object-fit: cover;
+}
+
+#navbarWithDropdown a{
+    color: #198754;
+    font-weight: bolder;
+}
+
+div.row.text-center.text-success > p{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#flush-headingOne > button,
+#flush-headingTwo > button,
+#flush-headingThree > button{
+    color: #198754;
+    font-weight: bolder;
+}
+
+div.accordion-body,
+nav *{
+    background-color: #f8f9fa;
+}

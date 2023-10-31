@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="">
+    <meta name="author" content="Daniel Alonso Lázaro">
+    <meta name="author" content="Víctor Hellín Sáez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="BOOTSTRAP/css/bootstrap.css">
+    <link rel="stylesheet" href="BOOTSTRAP/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="BOOTSTRAP/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="BOOTSTRAP/css/bootstrap-utilities.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Sobre mí</title>
+    <script defer src="BOOTSTRAP/js/bootstrap.bundle.js"></script>
+    <script src="https://kit.fontawesome.com/9e6ce9bbf3.js" crossorigin="anonymous"></script>
+    <script defer src="main.js"></script>
+</head>
+<body class="d-flex flex-column min-vh-100 text-m">
+<div class="container flex-grow-1">
+    <nav class="navbar navbar-expand-xl navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse show navbar-brand" id="navbarWithDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdownMenuLink" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            <h1>SOBRE MÍ</h1>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#flush-collapseOne">¿Quién Soy?</a></li>
+                            <li><a class="dropdown-item" href="#flush-collapseTwo">CV</a></li>
+                            <li><a class="dropdown-item" href="#flush-collapseThree">Contacto</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="accordion accordion-flush" id="accordionFlush">
+        <section id="quien-soy">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        ¿Quién Soy?
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                     data-bs-parent="#accordionFlush">
+                    <div class="accordion-body">
+                        <div class="card">
+                            <div class="row mt-3">
+                                <div class="col-12 d-flex justify-content-center mx-auto">
+                                    <img src="img/avatar.png" class="w-auto h-auto card-img-top perfil border border-3 rounded-circle" alt="card-img-top">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col text-center">
+                                        <h5 class="card-title ">Daniel Alonso Lázaro</h5>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-7">
+                                        <p class="card-text">Me llamo Daniel, tengo 33 años y soy Graduado en Traducción e Interpretación por la UAM. Me he metido en DAW porque los traductores somos potenciales moradores de la parte inferior del puente más cercano.</p>
+                                    </div>
+                                    <div class="col-md-6 col-lg-5">
+                                        <p class="card-text">Como se me dan bien los idiomas, creo que hablarle a un ordenador es como hablarle a un nativo que sea un nazi de la gramática y la sintaxis.</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="card-text mt-3">Si quieres saber algo más, te invito a pulsar <a class="dropdown-item d-inline text-bg-success" href="#flush-collapseThree">Contacto</a> más abajo y me envías un mail.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cv">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Curriculum Vitae
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                     data-bs-parent="#accordionFlush">
+                    <div class="accordion-body">
+                        <div class="card">
+                            <div class="card-body">
+                                <table>
+                                    <thead class="text-center">
+                                    <tr>
+                                        <th colspan="6">
+                                            <h1>Daniel Alonso Lázaro</h1>
+                                        </th>
+                                    </tr>
+                                    <tr class="mt-2">
+                                        <td colspan="6">
+                                            <p class="mt-3"><i class="fa-solid fa-envelope text-center  text-danger"></i>&nbsp;
+                                                <a class="text-decoration-none text-center text-uppercase"
+                                                   href="mailto:dalonsolaz@gmail.com">dalonsolaz@gmail.com</a></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2">
+                                            <p><i class="fa-brands fa-github text-danger"></i><a
+                                                    class="text-decoration-none" href="https://github.com/GyllenhaalSP">
+                                                @GyllenhaalSP</a></p>
+                                        </th>
+                                        <th colspan="2">
+                                            <p><i class="fa-solid fa-phone text-danger"></i><a
+                                                    class="text-decoration-none" href="tel: 0034618182368"> +034 618182368</a></p>
+                                        </th>
+                                        <th colspan="2">
+                                            <p><i class="fa-solid fa-location-dot text-danger"></i> Madrid, Spain</p>
+                                        </th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="small">
+                                        <td colspan="3"><p><i class="fa-solid fa-graduation-cap text-danger"></i> EDUCACIÓN</p></td>
+                                        <td colspan="3"><p><i class="fa-solid fa-globe text-danger"></i> IDIOMAS</p></td>
+                                    </tr>
+                                    <tr class="small">
+                                        <td colspan="3"><p>Beca Erasmus 2018-2019<br>Aristotle University of Thessaloniki</p></td>
+                                        <td colspan="3">
+                                            <p style="margin-bottom: 5px;">Inglés</p>
+                                            <div class="progress" style="height: 1rem; width: 12rem;">
+                                                <div class="progress-bar-animated bg-success text-end" role="progressbar" aria-label="Success example" style="width: 83%" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"></div><span class="fw-bold">&nbsp;&nbsp;&nbsp;&nbsp;C1</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="small">
+                                        <td colspan="3"><p>Traducción e Interpretación<br>ES-EN, DE, EA - UAM (2016-2020)</p>
+                                        </td>
+                                        <td colspan="3">
+                                            <p>British Council: APTIS C</p>
+                                            <p>UMP Inmersión Oral C1 (2016)</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="small">
+                                        <td colspan="3"><p>Bachillerato de Humanidades<br>IES Mariano José de Larra (2013-2016)</p></td>
+                                        <td colspan="3">
+                                            <p style="margin-bottom: 5px;">Griego Moderno</p>
+                                            <div class="progress" style="height: 1rem; width: 12rem;">
+                                                <div class="progress-bar-animated bg-success text-end" role="progressbar" aria-label="Success example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div><span class="fw-bold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B1</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="small">
+                                        <td colspan="3"></td>
+                                        <td colspan="3">Universidad de Ioannina: Intensivo de verano</td>
+                                    </tr>
+                                    <tr class="small">
+                                        <td colspan="6"><p class="mb-2"><i class="fa-solid fa-certificate text-danger"></i> CERTIFICADOS</p></td>
+                                    </tr>
+                                    <tr class="small">
+                                        <td colspan="6">
+                                            <p class="mb-0">Intro to Python Programming - University of Helsinki (MOOC 2022)</p>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacto">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                        Contacto
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                     data-bs-parent="#accordionFlush">
+                    <div class="container contact-form mb-5">
+                        <form method="post" class="mt-3">
+                            <h3>¡Mándame un mensaje!</h3>
+                            <div class="row mt-3">
+                                <div class="col-md-6">
+                                    <div class="form-group mb-3">
+                                        <input type="text" name="txtName" class="form-control" placeholder="Tu nombre" value="" />
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <input type="text" name="txtEmail" class="form-control" placeholder="Tu email" value="" />
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <input type="text" name="txtPhone" class="form-control" placeholder="Tu número de teléfono" value="" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        <textarea name="txtMsg" class="form-control" placeholder="Tu mensaje" style="width: 100%; height: 150px;"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-3 text-end">
+                                    <input type="submit" name="btnSubmit" class="btnContact" value="Enviar" />
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<footer class="bg-light text-center text-lg-start">
+    <div class="container p-3 pb-2">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <h5>GyllenhaalSP</h5>
+                <p>
+                    Así es como me conoce todo el mundo. Normalmente, la gente es muy vaga, así que me llaman "Gyllen" a secas.
+                </p>
+                <p>
+                    Gyllen, que no <span class="text-decoration-line-through">Guille</span>... tampoco me llamo Guillermo.
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Enlaces útiles</h5>
+                <ul class="list-unstyled">
+                    <li><a href="https://github.com/GyllenhaalSP/DIW23-24" class="text-dark">GitHub DIW 23-24</a></li>
+                    <li><a href="https://www.asyncore.es/" class="text-dark">AsynCore Project</a></li>
+                    <li><a href="https://bootstrap-cheatsheet.themeselection.com/" class="text-dark">Bootstrap Cheatsheet</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-2 mb-md-0">
+                <h5 class="text-uppercase mb-0">Contacto</h5>
+                <ul class="list-unstyled">
+                    <li><a href="mailto:dalonso3@educa.madrid.org" class="text-dark">Email</a></li>
+                    <li><a href="tel:618182368" class="text-dark">Teléfono</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row text-center text-success">
+                <p class="mb-0">
+                    &copy; 2023 Daniel Alonso Lázaro - Desarrollo de Interfaces Web - 2º DAW
+                </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+
+html{
+    caret-color: transparent;
+}
+
+body,
+ul.dropdown-menu,
+ul .dropdown-item,
+div.container.flex-grow-1{
+    background-color: #ccc;
+}
+
+div.container.flex-grow-1{
+    padding-top: 1rem;
+}
+
+#accordionFlush,
+#cv,
+#contacto{
+    padding-top: 2rem;
+}
+
+.accordion-button,
+.card{
+    background-color: #f8f9fa;
+}
+
+.card-text{
+    text-align: justify;
+}
+
+table{
+    table-layout: fixed;
+    width: 100%;
+}
+
+h1,
+h5 {
+    color: #198754;
+    display: inline-block;
+    font-weight: bolder;
+    margin: 0;
+    padding: 0;
+}
+
+.perfil{
+    width: 30vw !important;
+    height: auto;
+    object-fit: cover;
+}
+
+#navbarWithDropdown a{
+    color: #198754;
+    font-weight: bolder;
+}
+
+div.row.text-center.text-success > p{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#flush-headingOne > button,
+#flush-headingTwo > button,
+#flush-headingThree > button{
+    color: #198754;
+    font-weight: bolder;
+}
+
+div.accordion-body,
+nav *{
+    background-color: #f8f9fa;
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.dropdown-item').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href');
+            const targetAccordionHeader = document.querySelector(targetId).parentElement.querySelector('.accordion-header button');
+
+            // Cerrar todos los acordeones
+            document.querySelectorAll('.accordion-item .collapse').forEach(function(collapse) {
+                collapse.classList.remove('show');
+            });
+
+            document.querySelectorAll('.accordion-header button').forEach(function(button) {
+                button.classList.add('collapsed');
+                button.setAttribute('aria-expanded', "false");
+            });
+
+            // Abrir el acordeón objetivo
+            if (targetAccordionHeader) {
+                targetAccordionHeader.classList.remove('collapsed');
+                targetAccordionHeader.setAttribute('aria-expanded', "true");
+            }
+
+            const targetAccordion = document.querySelector(targetId);
+
+            if (targetAccordion) {
+                targetAccordion.classList.add('show');
+            }
+        });
+    });
+});
