@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    perspective: 10rem;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.box:hover {
+    transform: translateZ(2.86rem);
+    transition: transform 0.5s ease-in-out;
+}
+
+.box1:hover{
+    transform: translateZ(2.86rem) translateX(9rem) rotateZ(360deg);
+    transition: transform 0.5s ease-in-out;
+}
+
+.box2:hover{
+    transform: scaleZ(1.5) translateZ(2.86rem) rotateX(360deg) skew(20deg, -20deg);
+    transition: transform 0.5s ease-in-out;
+    background: linear-gradient(0deg, red, yellow 25%, yellow 75%, red);
+}
+
+.box2:hover::after{
+    content: " VIVA ESPAÑA!";
+}
+
+.box3:hover{
+    transform: translateZ(2.86rem) translateX(-9rem) rotateZ(720deg);
+    transition: transform 1s ease-in-out;
+}
