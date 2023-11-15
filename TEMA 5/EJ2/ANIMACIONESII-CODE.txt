@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="Entrega II">
+    <meta name="author" content="Daniel Alonso Lázaro">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ANIMACIONES II</title>
+</head>
+<body>
+<div class="container">
+    <div class="caja">
+        Soy una caja
+    </div>
+    <div class="caja2">
+        Soy una caja2
+    </div>
+    <div class="caja3">
+        Soy una caja3
+    </div>
+    <div class="caja4">
+        Soy una caja4
+    </div>
+    <div class="caja5">
+        Soy una caja5
+    </div>
+    <div class="torre">
+        <div class="persona"></div>
+        <div class="pelota"></div>
+    </div>
+</div>
+</body>
+</html>
+
+.caja{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    transition: width 1s linear, background-color 1s linear, text-align 1s linear;
+}
+
+.caja:hover{
+    background-color: blue;
+    width: 200px;
+    text-align: center;
+}
+
+.caja2{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    top: 140px;
+    left: 30px;
+
+}
+
+.caja2:hover{
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    transition: width 0.5s linear, height 1s linear, background-color 1s linear, text-align 1s linear;
+}
+
+.caja3{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+.caja3:hover{
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    transition: width 0.5s ease-in, height 1s ease-in, background-color 1s ease-in, text-align 1s ease-in;
+}
+
+.caja4{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    top: 30px;
+    left: 240px;
+}
+
+.caja4:hover{
+    background-color: orange;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    transition: width 0.5s ease-in, height 1s ease-in, background-color 1s ease-in, text-align 1s ease-in;
+}
+
+.caja5{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    top: 250px;
+    left: 240px;
+}
+
+.caja5:hover{
+    background-color: deeppink;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    transition: transform 1s ease-in, width 1s ease-in, height 1s ease-in, background-color 1s ease-in, text-align 1s ease-in;
+    transform: rotateZ(150deg);
+}
+
+.torre {
+    width: 100px;
+    height: 300px;
+    background-color: grey;
+    position: absolute;
+    top: 100px;
+    left: 500px;
+}
+
+.persona {
+    width: 20px;
+    height: 40px;
+    background-color: blue;
+    position: absolute;
+    bottom: 300px;
+    right: 0;
+}
+
+.torre:hover .persona {
+    right: 67px;
+    transition: right 1.5s ease-in-out;
+}
+
+.pelota {
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 300px;
+    right: 85px;
+}
+
+.torre:hover .pelota {
+    bottom: 0;
+    right: 100px;
+    transition: bottom 1s ease-in 2s, right 1s ease-in 1s;
+}
