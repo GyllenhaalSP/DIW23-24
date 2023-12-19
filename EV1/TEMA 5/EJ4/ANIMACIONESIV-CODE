@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="">
+    <meta name="author" content="Daniel Alonso Lázaro">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ANIMACIONES IV</title>
+</head>
+<body>
+<div class="dado">
+    <div class="cara frente"><span>1</span></div>
+    <div class="cara atras"><span>2</span></div>
+    <div class="cara derecha"><span>3</span></div>
+    <div class="cara izquierda"><span>4</span></div>
+    <div class="cara arriba"><span>5</span></div>
+    <div class="cara abajo"><span>6</span></div>
+</div>
+</body>
+</html>
+
+body {
+    margin:          0;
+    height:          100vh;
+    display:         flex;
+    justify-content: center;
+    align-items:     center;
+    perspective:     2000px;
+}
+
+.dado {
+    position:        relative;
+    width:           200px;
+    height:          200px;
+    transform-style: preserve-3d;
+    animation:       girar-dado 30s infinite linear;
+}
+
+.cara {
+    position:        absolute;
+    width:           200px;
+    height:          200px;
+    display:         flex;
+    align-items:     center;
+    justify-content: center;
+    font-size:       50px;
+    color:           white;
+    background:      linear-gradient(to top left, green, red, blue);
+    border:          1px solid black;
+}
+
+.frente {
+    transform: translateZ(100px);
+}
+
+.atras {
+    transform: rotateY(180deg) translateZ(100px);
+}
+
+.derecha {
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+.izquierda {
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
+.arriba {
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+.abajo {
+    transform: rotateX(-90deg) translateZ(100px);
+}
+
+@keyframes girar-dado {
+    0% {
+        transform: rotateX(0) rotateY(0) rotateZ(0);
+    }
+    25% {
+        transform: rotateX(360deg) rotateY(0) rotateZ(0);
+    }
+    50% {
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+    75% {
+        transform: rotateX(720deg) rotateY(360deg) rotateZ(360deg);
+    }
+    100% {
+        transform: rotateX(720deg) rotateY(720deg) rotateZ(720deg);
+    }
+}

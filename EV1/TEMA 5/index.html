@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P_2-3 Lista Tarea</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: white;
+        font-family: Helvetica Neue;
+    }
+
+    h1 {
+        text-align: center;
+        color: rgb(2, 39, 250);
+        text-decoration: underline;
+    }
+
+    #contenedor {
+
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        background-color: rgb(237, 145, 25);
+        border-radius: 10px;
+        width: 100%;
+        height: 80vh;
+    }
+
+    .addTarea {
+        position: relative;
+        background-color: #0056b3;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        color: #b3c6e8;
+        padding: 20px;
+        margin: 50px;
+        align-items: center;
+    }
+
+    .addTarea input {
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #b3c6e8;
+        border-radius: 5px;
+    }
+
+    .btn {
+        border-radius: 15px;
+        background-color: rgb(0, 0, 254);
+        color: white;
+        padding: 5px 10px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .btnTodo{
+        position: absolute;
+        bottom: 10px; /* Distancia desde la parte inferior */
+        left: 10px;
+        background-color: #820a0a;
+    }
+
+    .btn:hover {
+        background-color: #17bed4;
+    }
+
+    .listaTarea {
+        margin: 20px;
+        background-color: #ededb6;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .listaTarea ul {
+        list-style-type:decimal;
+        padding: 0 0 0 10px;
+    }
+
+    .listaTarea li {
+        margin: 5px 0;
+        border: 1px solid rgb(237, 145, 25);
+        padding: 3px;
+        color: black;
+    }
+
+    .listaTarea li:hover {
+        background-color: #7f9eee;
+    }
+
+
+</style>
+<body>
+<h1>Lista de tareas</h1>
+<div id="contenedor">
+    <div class="addTarea">
+        <h2>¿Qué quieres hacer?</h2>
+        <div id="botones">
+            <input type="text" id="entradaText" placeholder="Nueva Tarea"><br><br>
+            <button class="btn" onclick="agregarTarea()">Agregar</button><br><br>
+            <button class="btn" onclick="borrarTareas()">Borrar</button><br><br>
+            <button class="btn" onclick="moverTareaArriba()">Subir Tarea</button><br><br>
+            <button class="btn" onclick="moverTareaAbajo()">Bajar Tarea</button><br><br>
+            <button type="button" class="btn btnTodo" onclick="borrarTodasLasTareas()">Eliminar Todo</button>
+        </div>
+    </div>
+    <div class="listaTarea">
+        <ul id="miLista">
+            <!--aqui se añaden las tareas con la función -->
+        </ul>
+    </div>
+
+</div>
+<script>
+
+    /*funcion para agregar la etiqueta li donde irán cada una de las tareas,
+    * asegurandose que el campo de crear tarea no esté vacio y agregando una clase
+    * para que podamos seleccionar cada tarea por separado y podamos hacer cosas
+    * individualmentre.
+    */
+    function agregarTarea() {
+        var entrada = document.getElementById("entradaText");
+        var nuevoTexto = entrada.value.trim(); //esto para que elimine los espacios
+
+        if (nuevoTexto !== '') {
+
+            var nuevaTarea = document.createElement('li');
+            nuevaTarea.textContent = nuevoTexto;
+
+            nuevaTarea.classList.add('tarea'); //se agrega una clase
+            document.getElementById("miLista").appendChild(nuevaTarea);
+            entrada.value = '';
+
+            // Agregamos una casilla de verificación a cada nueva tarea
+            var checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            checkbox.className = 'seleccionar'; //este es el nombre de la clase para tratar en las funciones
+
+            var btnEliminar = document.createElement('button');
+            btnEliminar.textContent = 'Eliminar';
+            btnEliminar.className = 'btn btnEliminar';
+            btnEliminar.onclick = function() {
+                this.parentNode.remove();
+            };
+            nuevaTarea.appendChild(btnEliminar);
+
+            // Botón para marcar como hecha
+            var btnHecho = document.createElement('button');
+            btnHecho.textContent = 'Hecho';
+            btnHecho.className = 'btn btnHecho';
+            btnHecho.onclick = function() {
+                this.parentNode.style.color = 'green';
+            };
+            nuevaTarea.appendChild(btnHecho);
+            nuevaTarea.appendChild(checkbox);
+        }
+    }
+
+    /* Funcion para borrar las tareas seleccionadas mediante la casilla de verificacion
+    * Se utiliza el atributo 'parentNode' para eliminar un elemento del DOM.
+    * Al obtener el nodo padre y llamar al método remove() en él,
+    * puedes eliminar el elemento hijo de manera efectiva.
+    */
+    function borrarTareas() {
+        var checkboxes = document.getElementsByClassName('seleccionar');
+
+        for (var i = checkboxes.length - 1; i >= 0; i--) {
+            if (checkboxes[i].checked) {
+                var tarea = checkboxes[i].parentNode;
+                tarea.remove();
+            }
+        }
+    }
+
+    /* Funcion para mover la tarea seleccionada hacia arriba
+    * Se verifica si hay al menos dos tareas en la lista antes de continuar.
+    * Esto es importante para evitar errores cuando se intenta mover una tarea si
+    * no hay suficientes tareas para reorganizar.
+    *
+    * Usando insertBefore, se coloca la ultimaTarea antes del elemento en la posición
+    */
+    function moverTareaArriba() {
+        var lista = document.getElementById("miLista");
+        var tareas = lista.getElementsByClassName('tarea');
+
+        for (var i = 1; i < tareas.length; i++) {
+            if (tareas[i].getElementsByClassName('seleccionar')[0].checked) {
+                lista.insertBefore(tareas[i], tareas[i - 1]);
+                break; // Mueve solo la primera tarea seleccionada
+            }
+        }
+    }
+
+    function moverTareaAbajo() {
+        var lista = document.getElementById("miLista");
+        var tareas = lista.getElementsByClassName('tarea');
+
+        for (var i = tareas.length - 2; i >= 0; i--) {
+            if (tareas[i].getElementsByClassName('seleccionar')[0].checked) {
+                lista.insertBefore(tareas[i + 1], tareas[i]);
+                break; // Mueve solo la primera tarea seleccionada
+            }
+        }
+    }
+
+    function borrarTodasLasTareas() {
+        var lista = document.getElementById("miLista");
+        lista.innerHTML = ''; // Esto vacía todo el contenido dentro de la lista (borra todas las tareas)
+    }
+
+</script>
+</body>
+</html>
