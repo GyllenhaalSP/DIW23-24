@@ -1,0 +1,474 @@
+#contenedor {
+    display: flex;
+    background-color: black;
+    animation: postporocesado1C 500ms forwards 34s, postporocesado2C 500ms forwards 34500ms, postporocesado1C 500ms forwards 35s;
+}
+
+.cubos {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: gold;
+}
+
+#letrasIzquierda {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    font-size: 50px;
+}
+
+#letrasDerecha {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    font-size: 50px;
+}
+
+#letrasIzquierdaAbajo {
+    position:    absolute;
+    top:         65%;
+    left:        10%;
+    font-size:   50px;
+    font-family: "Blackadder ITC", serif;
+}
+
+#letrasMedioAbajo {
+    position:    absolute;
+    top:         80%;
+    left:        48%;
+    font-size:   50px;
+    font-family: "Blackadder ITC", serif;
+}
+
+#letrasDerechaAbajo {
+    position:    absolute;
+    top:         65%;
+    right:       10%;
+    font-size:   50px;
+    font-family: "Blackadder ITC", serif;
+}
+
+#cubo1 {
+    animation: cubo1 3s forwards, postporocesado1A 500ms forwards 34s, postporocesado2A 500ms forwards 34500ms, postporocesado1A 500ms forwards 35s;
+}
+
+#cubo2 {
+    animation: cubo2 3s forwards 3s, postporocesado1A 500ms forwards 34s, postporocesado2A 500ms forwards 34500ms, postporocesado1A 500ms forwards 35s;
+}
+
+#cubo3 {
+    animation: cubo3 3s forwards 6s, postporocesado1A 500ms forwards 34s, postporocesado2A 500ms forwards 34500ms, postporocesado1A 500ms forwards 35s;
+}
+
+#cubo4 {
+    animation: cubo4 3s forwards 9s, postporocesado1A 500ms forwards 34s, postporocesado2A 500ms forwards 34500ms, postporocesado1A 500ms forwards 35s;
+}
+
+#cubo5 {
+    animation: cubo5 3s forwards 12s, postporocesado1A 500ms forwards 34s, postporocesado2A 500ms forwards 34500ms, postporocesado1A 500ms forwards 35s;
+}
+
+#cubo6 {
+    animation: cubo6 3s forwards 15s, postporocesado1A 500ms forwards 34s, postporocesado2A 500ms forwards 34500ms, postporocesado1A 500ms forwards 35s;
+}
+
+#cubo7 {
+    animation: cubo7 1s forwards 17s, postporocesado1A 500ms forwards 34s, postporocesado1H 500ms forwards 34s, postporocesado2A 500ms forwards 34500ms, postporocesado2H 500ms forwards 34500ms, postporocesado1A 500ms forwards 35s, postporocesado1H 500ms forwards 35s;
+}
+
+#cubo8 {
+    background-color: transparent;
+    animation: cubo8 1s forwards 18s, postporocesado1E 500ms forwards 34s, postporocesado2E 500ms forwards 34500ms, postporocesado1E 500ms forwards 35s;
+}
+
+#cubo9 {
+    background-color: transparent;
+    animation: cubo9 1s forwards 19s, postporocesado1F 500ms forwards 34s, postporocesado2F 500ms forwards 34500ms, postporocesado1F 500ms forwards 35s;
+}
+
+#cubo10 {
+    background-color: transparent;
+    animation: cubo10 1s forwards 20s, postporocesado1F 500ms forwards 34s, postporocesado2F 500ms forwards 34500ms, postporocesado1F 500ms forwards 35s;
+}
+
+#cubo11 {
+    background-color: transparent;
+    animation: cubo11 1s forwards 21s, postporocesado1F 500ms forwards 34s, postporocesado2F 500ms forwards 34500ms, postporocesado1F 500ms forwards 35s;
+}
+
+#cubo12 {
+    background-color: transparent;
+    animation: cubo12 1s forwards 22s, postporocesado1F 500ms forwards 34s, postporocesado2F 500ms forwards 34500ms, postporocesado1F 500ms forwards 35s;
+}
+
+#cubo13 {
+    background-color: transparent;
+    animation: cubo13 1s forwards 23s, postporocesado1E 500ms forwards 34s, postporocesado2E 500ms forwards 34500ms, postporocesado1E 500ms forwards 35s;
+}
+
+#cubo14 {
+    background-color: transparent;
+    animation: cubo14 1s forwards 24s, postporocesado1E 500ms forwards 34s, postporocesado2E 500ms forwards 34500ms, postporocesado1E 500ms forwards 35s;
+}
+
+#cubo15 {
+    background-color: transparent;
+    animation: cubo15 1s forwards 25s, postporocesado1C 500ms forwards 34s, postporocesado2C 500ms forwards 34500ms, postporocesado1C 500ms forwards 35s;
+}
+
+#cubo16 {
+    background-color: transparent;
+    animation: cubo16 1s forwards 26s, postporocesado1C 500ms forwards 34s, postporocesado2C 500ms forwards 34500ms, postporocesado1C 500ms forwards 35s;
+}
+
+#cubo17 {
+    background-color: transparent;
+    animation: cubo17 1s forwards 27s, postporocesado1C 500ms forwards 34s, postporocesado2C 500ms forwards 34500ms, postporocesado1C 500ms forwards 35s;
+}
+
+#cubo18 {
+    background-color: transparent;
+    animation: cubo18 1s forwards 28s, postporocesado1C 500ms forwards 34s, postporocesado2C 500ms forwards 34500ms, postporocesado1C 500ms forwards 35s;
+}
+
+#letrasIzquierda, #letrasDerecha, #letrasIzquierdaAbajo, #letrasDerechaAbajo, #letrasMedioAbajo {
+    animation: letrasDespuesCubos 5s forwards 29s, postporocesado1B 500ms forwards 34s;
+}
+
+@keyframes cubo1 {
+    0% {
+        transform: scaleX(-1);
+    }
+    100% {
+        transform: scaleX(-5);
+    }
+}
+
+@keyframes cubo2 {
+    0% {
+        transform: scaleY(-1);
+    }
+    100% {
+        transform: scaleY(-5);
+    }
+}
+
+@keyframes cubo3 {
+    0% {
+        transform: translateX(105px);
+    }
+    100% {
+        transform: translateX(105px) translateY(-100px);
+        height: 150px;
+    }
+}
+
+@keyframes cubo4 {
+    0% {
+        transform: translateY(-105px);
+    }
+    100% {
+        transform: translateY(-105px) translateX(-100px);
+        width: 150px;
+    }
+}
+
+@keyframes cubo5 {
+    0% {
+        transform: translateX(-105px);
+    }
+    100% {
+        transform: translateX(-105px);
+        height: 150px;
+    }
+}
+
+@keyframes cubo6 {
+    0% {
+        transform: translateY(105px);
+    }
+    100% {
+        transform: translateY(105px);
+        width: 150px;
+    }
+}
+
+@keyframes cubo7 {
+    0% {
+        border: solid black 5px;
+        transform: translateX(-5px) translateY(-1px);
+        height: 52px;
+        width: 51px;
+    }
+    100% {
+        border-left: solid black 5px;
+        border-right: solid black 5px;
+        transform: translateX(-5px) translateY(-1px);
+        height: 52px;
+        width: 51px;
+    }
+}
+
+@keyframes cubo8 {
+    0% {
+        transform: scaleY(-4.4) translateX(25px);
+        width: 1px;
+        border: solid black 5px;
+        background-color: black;
+    }
+    100% {
+        transform: scaleY(-4.4) translateX(25px);
+        width: 1px;
+        border-left: solid black 5px;
+        background-color: black;
+    }
+}
+
+@keyframes cubo9 {
+    0% {
+        transform: scaleX(3) translateY(-87px) translateX(-24px);
+        height: 1px;
+        border: solid black 5px;
+        background-color: black;
+    }
+    100% {
+        transform: scaleX(3) translateY(-87px) translateX(-24px);
+        height: 1px;
+        border-top: solid black 5px;
+        background-color: black;
+    }
+}
+
+@keyframes cubo10 {
+    0% {
+        transform: scaleX(3) translateY(130px) translateX(25px);
+        height: 1px;
+        border: solid black 5px;
+        background-color: black;
+    }
+    100% {
+        transform: scaleX(3) translateY(130px) translateX(25px);
+        height: 1px;
+        border-top: solid black 5px;
+        background-color: black;
+    }
+}
+
+@keyframes cubo11 {
+    0% {
+        transform: scaleX(1.5) translateY(25px) translateX(45px);
+        height: 1px;
+        border: solid black 5px;
+        background-color: black;
+    }
+    100% {
+        transform: scaleX(1.5) translateY(25px) translateX(45px);
+        height: 1px;
+        border-top: solid black 5px;
+        background-color: black;
+    }
+}
+
+@keyframes cubo12 {
+    0% {
+        transform: scaleX(1.5) translateY(25px) translateX(-45px);
+        height: 1px;
+        border: solid black 5px;
+        background-color: black;
+    }
+    100% {
+        transform: scaleX(1.5) translateY(25px) translateX(-45px);
+        height: 1px;
+        border-top: solid black 5px;
+        background-color: black;
+    }
+}
+
+@keyframes cubo13 {
+    0% {
+        transform: scaleY(-3) translateX(126px) translateY(24px);
+        width: 1px;
+        border: solid black 5px;
+        background-color: black;
+    }
+    100% {
+        transform: scaleY(-3) translateX(126px) translateY(24px);
+        width: 1px;
+        border-left: solid black 5px;
+        background-color: black;
+    }
+}
+
+@keyframes cubo14 {
+    0% {
+        transform: scaleY(-3) translateX(-80px) translateY(-26px);
+        width: 1px;
+        border: solid black 5px;
+        background-color: black;
+    }
+    100% {
+        transform: scaleY(-3) translateX(-80px) translateY(-26px);
+        width: 1px;
+        border-left: solid black 5px;
+        background-color: black;
+    }
+}
+
+@keyframes cubo15 {
+    0% {
+        transform: translateX(104px) translateY(-135px) rotate(45deg);
+        background-color: black;
+    }
+    100% {
+        transform: translateX(104px) translateY(-135px) rotate(45deg);
+        background-color: black;
+    }
+}
+
+@keyframes cubo16 {
+    0% {
+        transform: translateX(-130px) translateY(-109px) rotate(45deg);
+        background-color: black;
+    }
+    100% {
+        transform: translateX(-130px) translateY(-109px) rotate(45deg);
+        background-color: black;
+    }
+}
+
+@keyframes cubo17 {
+    0% {
+        transform: translateX(-102px) translateY(128px) rotate(45deg);
+        background-color: black;
+    }
+    100% {
+        transform: translateX(-102px) translateY(128px) rotate(45deg);
+        background-color: black;
+    }
+}
+
+@keyframes cubo18 {
+    0% {
+        transform: translateX(127px) translateY(108px) rotate(45deg);
+        background-color: black;
+    }
+    100% {
+        transform: translateX(127px) translateY(108px) rotate(45deg);
+        background-color: black;
+    }
+}
+
+@keyframes letrasDespuesCubos {
+    100% {
+        color: gold;
+    }
+}
+
+@keyframes postporocesado1A {
+    100% {
+        background-color: white;
+    }
+}
+
+@keyframes postporocesado1B {
+    100% {
+        color: white;
+    }
+}
+
+@keyframes postporocesado1C {
+    100% {
+        background-color: red;
+    }
+}
+
+@keyframes postporocesado1D {
+    100% {
+        border-right: solid red 5px;
+        background-color: red;
+    }
+}
+
+@keyframes postporocesado1E {
+    100% {
+        border-left: solid red 5px;
+        background-color: red;
+    }
+}
+
+@keyframes postporocesado1F {
+    100% {
+        border-top: solid red 5px;
+        background-color: red;
+    }
+}
+
+@keyframes postporocesado1G {
+    100% {
+        border-bottom: solid red 5px;
+        background-color: red;
+    }
+}
+
+@keyframes postporocesado1H {
+    100% {
+        border-right: solid red 5px;
+        border-left: solid red 5px;
+    }
+}
+
+@keyframes postporocesado2A {
+    100% {
+        background-color: red;
+    }
+}
+
+@keyframes postporocesado2B {
+    100% {
+        color: white;
+    }
+}
+
+@keyframes postporocesado2C {
+    100% {
+        background-color: black;
+    }
+}
+
+@keyframes postporocesado2D {
+    100% {
+        border-right: solid black 5px;
+        background-color: black;
+    }
+}
+
+@keyframes postporocesado2E {
+    100% {
+        border-left: solid black 5px;
+        background-color: black;
+    }
+}
+
+@keyframes postporocesado2F {
+    100% {
+        border-top: solid black 5px;
+        background-color: black;
+    }
+}
+
+@keyframes postporocesado2G {
+    100% {
+        border-bottom: solid black 5px;
+        background-color: black;
+    }
+}
+
+@keyframes postporocesado2H {
+    100% {
+        border-right: solid black 5px;
+        border-left: solid black 5px;
+    }
+}

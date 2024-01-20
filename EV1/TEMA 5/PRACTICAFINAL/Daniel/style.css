@@ -1,0 +1,237 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    display:          flex;
+    justify-content:  center;
+    align-items:      center;
+    width:            100vw;
+    height:           100vh;
+    overflow:         hidden;
+    background-color: #000000;
+    margin: 0;
+}
+
+.sistema {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    padding-top: 100%;
+}
+
+@media (min-width: 700px) {
+    .sistema {
+        padding-top: 700px;
+    }
+}
+
+.sol {
+    position: absolute;
+    background-color: #ffcc00;
+    top: 46.5%;
+    left: 46.5%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 100px rgba(255, 255, 255, 0.8);
+    z-index: 100;
+}
+
+.orbita_sistema {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid rgba(255, 255, 255, .3);
+    border-radius: 100%;
+    animation: traslacion infinite linear both;
+}
+
+.orbita_mercurio {
+    width: 11%;
+    height: 11%;
+    animation-duration: 2s;
+}
+
+.orbita_venus {
+    width: 18%;
+    height: 18%;
+    animation-duration: 3.6s;
+}
+
+.orbita_tierra {
+    width: 25%;
+    height: 25%;
+    animation-duration: 5.1s;
+}
+
+.orbita_marte {
+    width: 35%;
+    height: 35%;
+    animation-duration: 8.8s;
+}
+
+.orbita_cinturon_asteroides {
+    width: 45%;
+    height: 45%;
+    border: 5px dotted rgba(255, 255, 255, .4);
+    animation-duration: 20s;
+}
+
+.orbita_jupiter {
+    width: 60%;
+    height: 60%;
+    animation-duration: 50.8s;
+}
+
+.orbita_saturno {
+    width: 75%;
+    height: 75%;
+    animation-duration: 121.3s;
+}
+
+.orbita_urano {
+    width: 90%;
+    height: 90%;
+    animation-duration: 349.4s;
+}
+
+.orbita_neptuno {
+    width: 100%;
+    height: 100%;
+    animation-duration: 685.4s;
+}
+
+.orbita_pluton {
+    width: 115%;
+    height: 115%;
+    animation-duration: 1029.6s;
+}
+
+@keyframes traslacion {
+    from {transform: translate(-50%, -50%);}
+    to {transform: translate(-50%, -50%) rotate(-360deg);}
+}
+
+.planeta {
+    position: absolute;
+    top: 50%;
+    left: -25px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    box-shadow: -1px 0 5px rgba(255, 255, 255, 0.3);
+    opacity: 1;
+    z-index: 100;
+}
+
+.planeta_mercurio {
+    width: 10px;
+    height: 10px;
+    left: -5px;
+    background-color: #9e9e9e;
+}
+
+.planeta_venus {
+    width: 20px;
+    height: 20px;
+    left: -10px;
+    background-color: #f5c76e;
+}
+
+.planeta_tierra {
+    width: 20px;
+    height: 20px;
+    left: -10px;
+    background-color: #6ea7d4;
+    background-image:
+        linear-gradient(45deg, #3c9e47 25%, transparent 25%, transparent 75%, #3c9e47 75%, #3c9e47),
+        linear-gradient(45deg, #3c9e47 25%, #6ea7d4 25%, #6ea7d4 75%, transparent 75%, transparent);
+    background-size: 10px 10px;
+    background-position: 0 0, 5px 5px;
+}
+
+.planeta_marte {
+    width: 15px;
+    height: 15px;
+    left: -7.5px;
+    background-color: #c1440e;
+}
+
+.planeta_jupiter {
+    width: 35px;
+    height: 35px;
+    left: -17.5px;
+    background: repeating-linear-gradient(to left, #986e2a 0%, #986e2a 20%, #d8bfaa 20%, #d8bfaa 40%);
+}
+
+.planeta_saturno {
+    width: 30px;
+    height: 30px;
+    left: -15px;
+    background-color: #ecd5af;
+    position: relative;
+}
+
+.planeta_saturno::before, .planeta_saturno::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 2px solid rgba(236, 213, 175, 0.6);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) rotate(-25deg);
+}
+
+.planeta_saturno::before {
+    width: 45px;
+    height: 10px;
+}
+
+.planeta_saturno::after {
+    width: 60px;
+    height: 15px;
+    opacity: 0.5;
+}
+
+.planeta_urano {
+    width: 25px;
+    height: 25px;
+    left: -12.5px;
+    background-color: #66c5cf;
+}
+
+.planeta_neptuno {
+    width: 25px;
+    height: 25px;
+    left: -12.5px;
+    background-color: #324d8f;
+}
+
+.planeta_pluton {
+    width: 8px;
+    height: 8px;
+    left: -4px;
+    background-color: #b6a28e;
+}
+
+.fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.estrella {
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    animation: brillo 5s infinite ease-in-out;
+}
+
+@keyframes brillo {
+    0%, 100% { opacity: 0.1; }
+    25% { opacity: 0.5; }
+    50% { opacity: 1; }
+}
